@@ -21,11 +21,13 @@ body::before {
   z-index: -1;
   background-size: 700px 50%;
   background-position: 90% center;
+
 }
 
 @media (min-width: 1024px) {
   body::before {
     background-attachment: fixed;
+    background-blend-mode: soft-light;
   }
 }
 
@@ -458,10 +460,7 @@ h6 {
   z-index: 1;
 }
 
-  body::before {
-    background-position: bottom;
-    background-blend-mode: multiply;
-  }
+
 }
 
 #contact .container {
@@ -552,6 +551,10 @@ section .container {
 @media (max-width:767px){
   section.section-show {
     padding-bottom: 0;
+  }
+  body::before {
+    background-position: bottom;
+    background-blend-mode: multiply;
   }
 }
 
