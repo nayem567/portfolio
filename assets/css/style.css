@@ -461,8 +461,6 @@ h6 {
 }
 
 
-}
-
 #contact .container {
 	background: #000;
 }
@@ -544,7 +542,6 @@ section .container {
   font-size: 36px;
   font-weight: 700;
   text-transform: uppercase;
-  font-family: "Poppins", sans-serif;
   color: #fff;
 }
 
@@ -1428,6 +1425,7 @@ body {
 }
 .glowing {
   animation: glow 2s ease-in-out both infinite;
+  will-change: transform;
 }
 .glowing:nth-child(1) {
   animation-delay: -0.2857142857s;

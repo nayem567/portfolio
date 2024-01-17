@@ -15,10 +15,26 @@
     <!-- Vendor CSS Files -->
     <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+
+    <!-- Load non-critical CSS asynchronously -->
+    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet" media="all" onload="this.media='all'">
+    <noscript>
+        <link rel="stylesheet" href="assets/vendor/boxicons/css/boxicons.min.css">
+    </noscript>
+
+    <link rel="preload" href="assets/vendor/glightbox/css/glightbox.min.css" as="style"
+        onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+        <link rel="stylesheet" href="assets/vendor/glightbox/css/glightbox.min.css">
+    </noscript>
+
     <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
-    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+    <link rel="preload" href="assets/vendor/swiper/swiper-bundle.min.css" as="style"
+        onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+        <link rel="stylesheet" href="assets/vendor/swiper/swiper-bundle.min.css">
+    </noscript>
 
     <link href="assets/css/style.css" rel="stylesheet">
 
@@ -76,10 +92,10 @@
             </nav><!-- .navbar -->
 
             <div class="social-links ">
-                <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
-                <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
-                <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
-                <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+                <a href="#" class="twitter" aria-label=" twitter" ><i class=" bi bi-twitter"></i></a>
+                <a href="#" class="facebook" aria-label=" facebook"><i class="bi bi-facebook"></i></a>
+                <a href="#" class="instagram" aria-label=" instagram"><i class="bi bi-instagram"></i></a>
+                <a href="#" class="linkedin" aria-label="linkedin"><i class="bi bi-linkedin"></i></a>
             </div>
 
         </div>
@@ -192,7 +208,7 @@
                         <span class="skill">HTML <i class="val">95%</i></span>
                         <div class="progress-bar-wrap">
                             <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0"
-                                aria-valuemax="100"></div>
+                                aria-valuemax="100" aria-label="Progress Bar 1: 95%"></div>
                         </div>
                     </div>
 
@@ -200,7 +216,7 @@
                         <span class="skill">CSS <i class="val">90%</i></span>
                         <div class="progress-bar-wrap">
                             <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0"
-                                aria-valuemax="100"></div>
+                                aria-valuemax="100" aria-label="Progress Bar 1: 90%"></div>
                         </div>
                     </div>
 
@@ -208,7 +224,7 @@
                         <span class="skill">JavaScript <i class="val">75%</i></span>
                         <div class="progress-bar-wrap">
                             <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0"
-                                aria-valuemax="100"></div>
+                                aria-valuemax="100" aria-label="Progress Bar 1: 75%"></div>
                         </div>
                     </div>
 
@@ -220,7 +236,7 @@
                         <span class="skill">Bootstrap <i class="val">95%</i></span>
                         <div class="progress-bar-wrap">
                             <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0"
-                                aria-valuemax="100"></div>
+                                aria-valuemax="100" aria-label="Progress Bar 1: 95%"></div>
                         </div>
                     </div>
 
@@ -228,7 +244,7 @@
                         <span class="skill">WordPress <i class="val">80%</i></span>
                         <div class="progress-bar-wrap">
                             <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0"
-                                aria-valuemax="100"></div>
+                                aria-valuemax="100" aria-label="Progress Bar 1: 80%"></div>
                         </div>
                     </div>
 
@@ -236,7 +252,7 @@
                         <span class="skill">Photoshop <i class="val">70%</i></span>
                         <div class="progress-bar-wrap">
                             <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0"
-                                aria-valuemax="100"></div>
+                                aria-valuemax="100" aria-label="Progress Bar 1: 70%"></div>
                         </div>
                     </div>
 
@@ -568,14 +584,16 @@
                         <i class="bx bx-share-alt"></i>
                         <h3>Social Profiles</h3>
                         <div class="social-links">
-                            <a href="https://twitter.com/mohaymenul" class="twitter"><i class="bi bi-twitter"></i></a>
-                            <a href="https://www.facebook.com/mohaymenul.islam" class="facebook"><i
-                                    class="bi bi-facebook"></i></a>
-                            <a href="https://www.instagram.com/mohaymenul/" class="instagram"><i
+                            <a href="https://twitter.com/mohaymenul" class="twitter" aria-label="Twitter"><i
+                                    class="bi bi-twitter"></i></a>
+                            <a href="https://www.facebook.com/mohaymenul.islam" class="facebook"
+                                aria-label="facebook"><i class="bi bi-facebook"></i></a>
+                            <a href="https://www.instagram.com/mohaymenul/" class="instagram" aria-label="facebook"><i
                                     class="bi bi-instagram"></i></a>
-                            <a href="https://www.linkedin.com/in/mohaymenul/" class="linkedin"><i
+                            <a href="https://www.linkedin.com/in/mohaymenul/" class="linkedin" aria-label="facebook"><i
                                     class="bi bi-linkedin"></i></a>
-                            <a href="skype:mohaymenul?call" class="skype"><i class="bi bi-skype"></i></a>
+                            <a href="skype:mohaymenul?call" aria-label="facebook" class="skype"><i
+                                    class="bi bi-skype"></i></a>
                         </div>
                     </div>
                 </div>
